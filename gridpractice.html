@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download UltraEdit text editor for Windows</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    --bgcolor: rgb(243, 243, 243);
+    --button-width: 300px;
+    --buttons-padding: 9px;
+    --button-color2: #5cb85c;
+    --button-color1: #00b6d1;
+
+}
+
+.navbar {
+    display: flex;
+    /* align-items: center; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 70px;
+    padding-top: 10px;
+    border: transparent;
+    height: 13vh;
+}
+
+
+
+.nav-image {
+    height: 70%;
+}
+
+.nav-image:hover {
+    cursor: pointer;
+}
+
+.options {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 90px;
+    padding-left: 330px;
+    padding-bottom: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pricing {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-color: transparent;
+    margin-left: 20px;
+}
+
+.prods,
+.resources,
+.aboutus {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-left: 20px;
+    border-color: transparent;
+}
+
+.prods,
+.resources,
+.aboutus,
+.para,
+.pricing:hover {
+    cursor: pointer;
+}
+
+#products {
+    margin-left: 40px;
+}
+
+select {
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+
+.para {
+    font-size: 17px;
+    color: rgb(73, 73, 73);
+    margin-left: 24px;
+}
+
+.upper {
+    display: flex;
+    flex-direction: column;
+    border: transparent;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    height: 40vh;
+    padding: 10px;
+}
+
+.heading {
+    padding-top: 66px;
+    /* word-wrap: ; */
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 23px;
+    font-size: 48px;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 200; */
+    height: 120px;
+    font-style: normal;
+    color: rgb(53, 52, 52);
+    top: 48x;
+}
+
+.stronger {
+    color: rgb(39, 39, 39);
+    /* border: 2px solid black; */
+    padding-top: 0px;
+    /* font-style: normal; */
+    font-family: sans-serif;
+    /* padding: 12px; */
+}
+
+.image {
+    float: right;
+    position: relative;
+    bottom: 166px;
+    left: 430px;
+    border: 2px solid rgb(255, 255, 255);
+    height: 134px;
+}
+
+.image:hover {
+    cursor: pointer;
+}
+
+.upper-para {
+    display: flex;
+    flex-direction: column;
+    width: 68vw;
+    height: 160px;
+    font-size: 24px;
+    position: relative;
+    bottom: 1px !important;
+    font-weight: 150;
+    color: rgb(51, 50, 50);
+    font-style: normal;
+    font-family: sans-serif;
+}
+
+.text {
+    /* padding-left: 300px;*/
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: #00b6d1;
+    color: white;
+    font-weight: bold;
+    border-color: transparent;
+    border-radius: 5px;
+    padding: 14px;
+    width: 300px;
+    margin-top: 12px;
+}
+
+.button:hover {
+    background-color: #079ab1;
+    cursor: pointer;
+    transition: all 0.5s ease 0.1s;
+}
+
+.main {
+    row-gap: 50px;
+    column-gap: 25px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    /* height: 120px; */
+    grid-template-columns: 240px 300px 300px 300px 240px;
+    grid-template-rows: 120px 170px 170px 170px 120px;
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    margin: 9px;
+}
+
+.english {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 2px solid var(--bgcolor);
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    width: 212px;
+    padding: 36px;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+.german {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    border: 2px solid var(--bgcolor);
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    width: 212px;
+    padding: 36px;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+.italian {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    border: 2px solid var(--bgcolor);
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    width: 212px;
+    padding: 36px;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    width: var(--button-width);
+
+}
+
+.button1 {
+    background-color: var(--button-color1);
+    color: white;
+    border-color: transparent;
+    border-radius: 8px;
+    padding: var(--buttons-padding);
+}
+
+.button1:hover {
+    cursor: pointer;
+    background-color: #09a6bd;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.button2 {
+    padding: var(--buttons-padding);
+    background-color: var(--button-color2);
+    color: white;
+    border-color: transparent;
+    border-radius: 8px;
+}
+
+.button2:hover {
+    cursor: pointer;
+    background-color: #81c780;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.before-main {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: ; */
+    top: 90px;
+    left: 200px;
+    width: 430px;
+}
+
+.image-before-main {
+    height: 60px;
+
+}
+
+#heading-before-picture {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    font-size: 17px;
+    margin-left: 12px;
+    font-weight: lighter;
+}
+
+.link {
+    color: black;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.link:hover {
+    cursor: pointer;
+}
+
+.box-heading1 {
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 10px; */
+    font-size: large;
+    font-weight: bold;
+}
+
+.box-heading2 {
+    margin-bottom: 32px;
+    font-weight: lighter;
+}
+.icon-image {
+    height: 20px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.icon-image:hover {
+    cursor: pointer;
+}
+@media only screen and (max-width:1084px), (orientation:potrait){
+    .navbar {
+      position: sticky !important;;
+      top: 1px;
+      background-color: #079ab1;
+      width: 100vw;
+      z-index: 1;
+      /* box-shadow: 23px 23px 23px 23px green; */
+        display: flex;
+        align-items: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        padding-left: 70px;
+        padding-top: 10px;
+        border: transparent;
+        height: 13vh;
+    }
+    .nav-image {
+        display: flex;
+        align-items: center;
+        height: 10vh;
+        justify-content: center;
+        
+    }
+    .options{
+        display: none;
+    }
+    .icon-image{
+        display: none;
+    }
+    .upper{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        /* top: 200px; */
+    }
+
+    .heading{
+        /* height: 12vh; */
+        width: 90vw;
+        font-size: 1px;
+    }
+    .image{
+        position: relative;
+        bottom: 30px;
+        left: 200px;
+        height: 100px;
+    }
+    .before-main{
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        top:90px ;
+        left: 12px;
+    }
+    .main{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns:120px 240px  ;
+        grid-template-rows: 120px 170px 170px 170px 10px 120px;
+        /* row-gap: 25px; */
+
+    }
+    .english{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        border: 2px solid var(--bgcolor);
+        background-color: var(--bgcolor);
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        padding: 36px;
+        align-items: center;
+        justify-content:center;
+    }
+    .german{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        border: 2px solid var(--bgcolor);
+        background-color: var(--bgcolor);
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        padding: 36px;
+        align-items: center;
+        justify-content:center;
+        margin-top: 123px;
+    }
+    .italian{
+        grid-column: 2/3;
+        grid-row: 5/6;
+        border: 2px solid var(--bgcolor);
+        background-color: var(--bgcolor);
+        display: flex;
+        flex-direction: column;
+        width: 212px;
+        padding: 36px;
+        margin-top: 0px;
+        /* justify-content: center; */
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+  </style>
+  <body>
+    <nav class="navbar">
+      <a  href="https://www.ultraedit.com/">
+        <img
+          class="nav-image"
+          src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+          alt=""
+        />
+      </a>
+      <div class="options">
+        <select name="products" id="products" class="prods">
+          <option class="prod" value="products">Products</option>
+        </select>
+        <select name="pricing" id="pricing" class="pricing">
+          <option class="price" value="pricing">Pricing</option>
+        </select>
+        <select name="resources" class="resources">
+          <option class="resource" value="resources">Resources</option>
+        </select>
+        <select name="aboutus" class="aboutus">
+          <option class="aboutus" value="aboutus">About Us</option>
+        </select>
+        <p class="para">Security and compliance</p>
+      </div>
+      <a href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/"><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" class="icon-image" alt=""></a>
+
+    </nav>
+    <section class="upper">
+      <div class="heading">
+        Download
+        <h4 class="stronger">&nbsp;UltraEdit&nbsp;</h4>
+        for Windows
+      </div>
+      &nbsp;
+
+      <span class="upper-para"
+        >Download and try UltraEdit before you buy it! This download includes
+        the full Windows <span class="text">version of the text editor.</span>
+      </span>
+
+      <span class="image">
+        <a target="_blank" href="https://www.g2.com/products/ultraedit/reviews/"
+          ><img
+            src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png"
+            alt=""
+        /></a>
+      </span>
+      <a target="_blank" href="https://www.ultraedit.com/downloads/uex-thank-you/"
+        ><button class="button">DOWNLOAD MAC OR LINUX VERSION</button></a
+      >
+    </section>
+    <span class="before-main">
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2CvtvnRT5HCi4PJ9CNnv_AInTMjBTkq6t3C6YLb0lfCFalRpG" class="image-before-main" alt="">
+      <h4 id="heading-before-picture">Download UltraEdit <sub>v2023.2(released 2023/12/15) | <a class="link" href="https://www.ultraedit.com/updates/uehotfix/" target="_blank">Hotfix</sub></h4></a>
+  </span>
+    <footer class="main">
+      <div class="english">
+        <span class="language"
+          ><span class="box-heading1">English <br></span>
+        </span>
+          <div class="box-heading2">English</div>
+          </span>
+        
+        <span class="buttons">
+          <button class="button1">Download 32-bit</button>
+          <button class="button2">Download 64-bit</button>
+        </span>
+      </div>
+      <div class="german">
+        <span class="language"
+        ><span class="box-heading1">Deutsch <br></span>
+      </span>
+        <div class="box-heading2">German</div>
+        
+        </span>
+        <span class="buttons">
+          <button class="button1">Download 32-bit</button>
+          <button class="button2">Download 64-bit</button>
+        </span>
+      </div>
+      <div class="italian">
+        <span class="language"
+          ><span class="box-heading1">Italiano <br></span>
+        </span>
+          <div class="box-heading2">Italian</div>
+          
+        </span>
+        <span class="buttons">
+          <button class="button1">Download 32-bit</button>
+          <button class="button2">Download 64-bit</button>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
